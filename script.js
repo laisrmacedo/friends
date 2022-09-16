@@ -1,40 +1,60 @@
-//SEMANA 1
-//Parte 1 e 2
+//SEMANA 2
+//Parte 1
 
-const nome1 = "Chocolate Ruby"
-const porcentagemCacau1 = 47
-const vegano1 = false
+let item1 = {
+    nome: "Chocolate ruby",
+    porcentagemCacau: 47,
+    vegano: false,
+    ingredientes: ["grãos de cacau", "leite", "mateiga de cacau"]
+}
 
-const nome2 = "Chocolate de soja"
-const porcentagemCacau2 = 70
-const vegano2= true
+let item2 = {
+    nome: "Chocolate de soja",
+    porcentagemCacau: 47,
+    vegano: true,
+    ingredientes: ["extrato de soja","açucar", "mateiga de cacau", "flocos de arroz"]
 
-const nome3 = "Chocolate ao leite"
-const porcentagemCacau3 = 37
-const vegano3 = false
+}
 
+let item3 = {
+    nome: "Chocolate ao leite",
+    porcentagemCacau: 37,
+    vegano: false,
+    ingredientes: ["licor de cacau", "açúcar", "manteiga de cacau", "leite", "baunilha"]
+}
+
+//Parte 2
+
+let itens = []
 
 //Parte 3 
 
-const mediaDos3 = (porcentagemCacau1 + porcentagemCacau2 + porcentagemCacau3)/3
-console.log(mediaDos3)
+// itens.push(item1)
+// itens.push(item2)
+// itens.push(item3)
 
-//Parte 4
+// itens.push(item1, item2, item3)
 
-const todosVeganos = vegano1 && vegano2 && vegano3
-console.log(todosVeganos)
 
-//Parte 5
+//Parte 4 e 5
 
-//Chocolate de soja
-const ingredientes2 = ["extrato de soja","açucar", "mateiga de cacau", "flocos de arroz"]
+if(item1.vegano){
+    itens.push(item1)
+} else {
+    alert("O item 1 não foi adicionado")
+}
 
-//Parte 6
-console.log(`
-${nome2.toUpperCase()}
-Porcentagem de cacau: ${porcentagemCacau2}%
-É vegano? ${vegano2}
-Ingredientes: ${ingredientes2}
-`)
+if(item2.vegano){
+    itens.push(item2)
+} else {
+    alert("O item 2 não foi adicionado")
+}
 
+if(item3.vegano){
+    itens.push(item3)
+} else {
+    alert("O item 3 não foi adicionado")
+}
+
+console.log(itens)
 
