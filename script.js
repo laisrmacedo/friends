@@ -1,17 +1,19 @@
-//SEMANA 3
+//SEMANA 4 ============= MUDANÇA DE TEMA ============= 
+
 //Parte 1
 
 let item1 = {
-    nome: "Chocolate ruby",
-    porcentagemCacau: 47,
-    vegano: false,
-    ingredientes: ["grãos de cacau", "leite", "mateiga de cacau"]
+    nome: "Courteney Bass Cox",
+    elencoPrincipal: true,
+    numeroEpisodios: 236,
+    personagem: "Monica Geller",
+    caracteristicas: ["cozinheira", "competitiva", "perfeccionista"]
 }
 
 console.log(`${item1.nome.toUpperCase()}
 Porcentagem de cacau: ${item1.porcentagemCacau}
 É vegano? ${item1.vegano}
-Ingredientes: ${item1.ingredientes.join(", ")}
+Ingredientes: "${item1.ingredientes.join(", ")}"
 `)
 
 let item2 = {
@@ -24,7 +26,7 @@ let item2 = {
 console.log(`${item2.nome.toUpperCase()}
 Porcentagem de cacau: ${item2.porcentagemCacau}
 É vegano? ${item2.vegano}
-Ingredientes: ${item2.ingredientes.join(", ")}
+Ingredientes: "${item2.ingredientes.join(", ")}"
 `)
 
 let item3 = {
@@ -37,7 +39,7 @@ let item3 = {
 console.log(`${item3.nome.toUpperCase()}
 Porcentagem de cacau: ${item3.porcentagemCacau}
 É vegano? ${item3.vegano}
-Ingredientes: ${item3.ingredientes.join(", ")}
+Ingredientes: "${item3.ingredientes.join(", ")}"
 `)
 
 //Parte 2
@@ -78,7 +80,7 @@ function retornarObjeto (string, objeto){
         Ingredientes: ${objeto.ingredientes.join(", ")}
         `)
     } else {
-        alert("Este item não foi encontrado")
+        // alert("Este item não foi encontrado")
     }
 }
 
