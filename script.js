@@ -170,7 +170,7 @@ itens.push(item1, item2, item3)
 
 //Parte 4 
 
-let qualPersonagem = prompt("Personagem")
+// let qualPersonagem = prompt("Personagem")
 
 function retornarObjeto (string, objeto){
     if(objeto.nome === string){
