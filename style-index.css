@@ -22,7 +22,7 @@ body{
 }
 
 header{
-    width: 60%;
+    width: 50%;
     /* border: 1px blue solid; */
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -30,7 +30,7 @@ header{
 }
 
 nav {
-    grid-column: 2/6;
+    grid-column: 2/7;
     grid-row: 1/2;
     display: flex;
     justify-content: space-between;
@@ -39,6 +39,21 @@ nav {
     color: black;
     /* margin-bottom: 70px; */
     /* border: 1px green solid; */
+}
+
+a {
+    color: #535353;
+    text-decoration: none;
+}
+
+#inicio:hover{
+    color: red;
+}
+#personagens:hover{
+    color: rgb(93, 176, 253);
+}
+#curiosidades:hover{
+    color: rgb(255, 196, 0);
 }
 
 .logo-friends{
@@ -55,7 +70,7 @@ nav {
 
 .palavras-chave{
     font-size: 2.5vh;
-    grid-column: 2/6;
+    grid-column: 2/7;
     grid-row: 7/8;
     display: flex;
     /* flex-direction: column;
@@ -66,13 +81,13 @@ nav {
 
 .frase{
     font-size: 1.5vh;
-    grid-column: 2/6;
+    grid-column: 2/7;
     grid-row: 8/9;
     color: #636161;
 }
 
 .barra1{
-    background: linear-gradient(60deg, white 60%, rgba(128, 128, 128, 0) 50%);
+    background: linear-gradient(58deg, white 60%, rgba(128, 128, 128, 0) 50%);
     grid-column: 1/5;
     grid-row: 1/4;
     z-index: 1;
@@ -95,7 +110,7 @@ nav {
 } */
 
 aside{
-    width: 40%;
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 1fr);
@@ -279,28 +294,7 @@ aside{
     
 }
 
-nav > div{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bolder;
-}
 
-a {
-    color: #535353;
-    text-decoration: none;
-}
-
-#inicio:hover{
-    color: red;
-}
-#personagens:hover{
-    color: rgb(93, 176, 253);
-}
-#curiosidades:hover{
-    color: rgb(255, 196, 0);
-}
 
 footer{
     display: flex;

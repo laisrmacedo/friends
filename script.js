@@ -7,24 +7,25 @@ let item1 = {
     ator: "Courteney Bass Cox",
     elencoPrincipal: true,
     numeroEpisodios: 236,
-    caracteristicas: ["cozinheira", "competitiva", "perfeccionista"]
+    caracteristicas: ["cozinheira", "competitiva", "perfeccionista"],
+    icon: "./Media/icon-perso/monica-icon.jpg"
 }
 
-console.log(`${item1.personagem.toUpperCase()}
-Ator/atriz: ${item1.ator}
-Faz parte do elenco principal? ${item1.elencoPrincipal === true ? "Sim!" : "Não!"}
-Número de episódios: ${item1.numeroEpisodios}
-Características: ${item1.caracteristicas.join(", ")}
-`)
+// console.log(`${item1.personagem.toUpperCase()}
+// Ator/atriz: ${item1.ator}
+// Faz parte do elenco principal? ${item1.elencoPrincipal === true ? "Sim!" : "Não!"}
+// Número de episódios: ${item1.numeroEpisodios}
+// Características: ${item1.caracteristicas.join(", ")}
+// `)
 
-console.log(typeof item1.caracteristicas.join(", ") )
 
 let item2 = {
     personagem: "rachel karen green",
     ator: "Jennifer Joanna Aniston",
     elencoPrincipal: true,
     numeroEpisodios: 236,
-    caracteristicas: ["estilista", "mimada", "ex-esposa-ross"]
+    caracteristicas: ["estilista", "mimada", "ex-esposa-ross"],
+    icon: "./Media/icon-perso/rachel-icon.png"
 }
 
 let item3 = {
@@ -32,7 +33,8 @@ let item3 = {
     ator: "Lisa Valerie Kudrow",
     elencoPrincipal: true,
     numeroEpisodios: 236,
-    caracteristicas: ["massagista", "supersticiosa", "ingênua"]
+    caracteristicas: ["massagista", "supersticiosa", "ingênua"],
+    icon: "./Media/icon-perso/phoebe-icon.png"
 }
 
 let item4 = {
@@ -40,7 +42,8 @@ let item4 = {
     ator: "David Lawrence Schwimmer",
     elencoPrincipal: true,
     numeroEpisodios: 236,
-    caracteristicas: ["paleontólogo", "nerd", "divorciado"]
+    caracteristicas: ["paleontólogo", "nerd", "divorciado"],
+    icon: "./Media/icon-perso/ross-icon.png"
 }
 
 let item5 = {
@@ -48,7 +51,8 @@ let item5 = {
     ator: "Matthew Steven LeBlanc",
     elencoPrincipal: true,
     numeroEpisodios: 236,
-    caracteristicas: ["ator", "mulherengo", "comilão"]
+    caracteristicas: ["ator", "mulherengo", "comilão"],
+    icon: "./Media/icon-perso/joey-icon.png"
 }
 
 let item6 = {
@@ -56,7 +60,8 @@ let item6 = {
     ator: "Matthew Langford Perry",
     elencoPrincipal: true,
     numeroEpisodios: 236,
-    caracteristicas: ["contador", "piadista", "sarcástico"]
+    caracteristicas: ["contador", "piadista", "sarcástico"],
+    icon: "./Media/icon-perso/chandler-icon.png"
 }
 
 let item7 = {
@@ -64,7 +69,8 @@ let item7 = {
     ator: "James Michael Tyler",
     elencoPrincipal: false,
     numeroEpisodios: 148,
-    caracteristicas: ["gerente", "apaixonado", "inseguro"]
+    caracteristicas: ["gerente", "apaixonado", "inseguro"],
+    icon: "./Media/icon-perso/gunther.png"
 }
 
 let item8 = {
@@ -72,7 +78,8 @@ let item8 = {
     ator: "Margaret Emily Wheeler",
     elencoPrincipal: false,
     numeroEpisodios: 19,
-    caracteristicas: ["risada", "irritante", "oh-my-god"]
+    caracteristicas: ["risada", "irritante", "oh-my-god"],
+    icon: "./Media/icon-perso/janice.png"
 }
 
 let item9 = {
@@ -80,7 +87,8 @@ let item9 = {
     ator: "Elliott Gould e Christina Pickles",
     elencoPrincipal: false,
     numeroEpisodios: 19,
-    caracteristicas: ["casal","pais", "ross-preferido"]
+    caracteristicas: ["casal","pais", "ross-preferido"],
+    icon: "./Media/icon-perso/jack-judy.png"
 }
 
 
@@ -89,7 +97,8 @@ let item10 = {
     ator: "Jane Moore Sibbett",
     elencoPrincipal: false,
     numeroEpisodios: 18,
-    caracteristicas: ["ex-esposa-ross", "mãe", "ben"]
+    caracteristicas: ["ex-esposa-ross", "mãe", "ben"],
+    icon: "./Media/icon-perso/carol.png"
 }
 
 let item11 = {
@@ -97,7 +106,8 @@ let item11 = {
     ator: "Paul Rudd",
     elencoPrincipal: false,
     numeroEpisodios: 17,
-    caracteristicas: ["marido-phoebe", "estranho", "pianista"]
+    caracteristicas: ["marido-phoebe", "estranho", "pianista"],
+    icon: "./Media/icon-perso/mike.jpg"
 }
 
 let item12 = {
@@ -105,7 +115,8 @@ let item12 = {
     ator: "Helen Baxendale",
     elencoPrincipal: false,
     numeroEpisodios: 14,
-    caracteristicas: ["ex-esposa-ross", "london", "nome-errado-altar"]
+    caracteristicas: ["ex-esposa-ross", "london", "nome-errado-altar"],
+    icon: "./Media/icon-perso/emily.png"
 }
 
 let item13 = {
@@ -113,7 +124,8 @@ let item13 = {
     ator: "Margaret Emily Wheeler",
     elencoPrincipal: false,
     numeroEpisodios: 10,
-    caracteristicas: ["ex-namorado-monica", "mais-velho", "bigode"]
+    caracteristicas: ["ex-namorado-monica", "mais-velho", "bigode"],
+    icon: "./Media/icon-perso/richard.png"
 }
 
 let item14 = {
@@ -121,7 +133,8 @@ let item14 = {
     ator: "Chick and Duck",
     elencoPrincipal: false,
     numeroEpisodios: 10,
-    caracteristicas: ["pintinho", "patinho", "pinto-nao-nada"]
+    caracteristicas: ["pintinho", "patinho", "pinto-nao-nada"],
+    icon: "./Media/icon-perso/duck.png"
 }
 
 let item15 = {
@@ -129,10 +142,21 @@ let item15 = {
     ator: "Giovanni Ribisi",
     elencoPrincipal: false,
     numeroEpisodios: 9,
-    caracteristicas: ["meio-irmao", "pai-trigemeos", "queima-coisas"]
+    caracteristicas: ["meio-irmao", "pai-trigemeos", "queima-coisas"],
+    icon: "./Media/icon-perso/frank.png"
 }
 
+let itens = [item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15]
 
+const divScroll = document.querySelector("#icons")
+
+const adicionarImagens = () => {
+    for(let item of itens){
+        divScroll.innerHTML += `<img src=${item.icon} alt="" srcset="">`
+    }
+}
+
+adicionarImagens()
 
 
 
@@ -141,8 +165,7 @@ let item15 = {
 
 //Parte 2
 
-let itens = []
-itens.push(item1, item2, item3)
+
 
 
 // for(let item of itens){
