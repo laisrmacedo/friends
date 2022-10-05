@@ -29,8 +29,8 @@
       <div class="label-input">
         <label for="">QUAL PERSONAGEM VOCÊ QUER VER?</label>
         <div class="input">
-          <input type="text" id="input-procura" value="">
-          <button type="button" id="button-procura" onclick="procuraPersonagem()">
+          <input type="text" id="input-procura" oninput="onInputChange(event)">
+          <button type="button" id="button-procura" onclick="verificaPersonagemProcurado()">
             <img src="./Media/lupa.png" alt="" srcset="">
           </button>
         </div>

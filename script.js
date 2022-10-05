@@ -122,7 +122,7 @@ let item13 = {
 }
 
 let item14 = {
-    personagem: "chick and duck",
+    personagem: "duck and chick",
     ator: "Chick and Duck",
     elencoPrincipal: false,
     numeroEpisodios: 10,
@@ -143,51 +143,84 @@ let itens = [item1, item2, item3, item4, item5, item6, item7, item8, item9, item
 
 const divScroll = document.querySelector("#icons")
 
-const adicionarImagens = () => {
+const adicionarImagensScroll = (itens) => {
     for(let item of itens){
-        divScroll.innerHTML += `<img src=${item.icon} alt="" srcset="">`
+        divScroll.innerHTML += `<img src=${item.icon} onclick="clickPersonagem(event)" alt="">`
     }
 }
 
-adicionarImagens()
+adicionarImagensScroll(itens)
 
-//Pesquisa de nomes
+const imagensScroll = document.querySelector(".img-scroll")
+
+function onInputChange(event){
+    imagensScroll.innerHTML = ""
+    const value = event.target.value
+    const itensFiltrados = itens.filter(item => {
+        return item.personagem.includes(value)
+    })
+
+    // if(itensFiltrados.length === 0){
+    //     alert("Este personagem não foi encontrado.")
+    // }
+
+    adicionarImagensScroll(itensFiltrados)
+}
+
+//Personagem procurado
 
 const boxMostraPersonagem = document.querySelector("#item-procurado")
 const inputDeProcura = document.querySelector("#input-procura") 
 
-const mostraPersonagem = `MOnica Geller`
+// let personagemEncontrado
 
-function procuraPersonagem(){
-    // for(let item of itens){
-    //     if (inputDeProcura.value.toLowerCase().slice(0,4) === item.personagem.slice(0,4)){
-    //         boxMostraPersonagem.innerHTML = `${item.personagem}`
-    //     }
-    // }
-    const personagemProcurado = itens.filter(item => {
-        return item.personagem.slice(0,4) === inputDeProcura.value.toLowerCase().slice(0,4)
+function verificaPersonagemProcurado(){
+
+    const personagemDigitado = itens.filter(item => {
+        if(item.personagem.includes(inputDeProcura.value.toLowerCase())){
+            return item
+        }
     })
 
-    if(personagemProcurado.length === 0){
+    if(personagemDigitado.length === 0){
         alert("Este personagem não foi encontrado.")
     } else{
-        boxMostraPersonagem.classList.add("personagem-procurado")
+        mostraPersonagem(personagemDigitado)
     }
 
     inputDeProcura.value = ""
-
-    return boxMostraPersonagem.innerHTML = `
-    <div>
-    <img class="icon-personagem" src="${personagemProcurado[0].icon}"/>
-    </div>
-    <div>
-    <p>${personagemProcurado[0].personagem.toUpperCase()}</p>
-    <p>Ator: ${personagemProcurado[0].ator}</p>
-    <p>Elenco Principal? ${personagemProcurado[0].elencoPrincipal? "Sim" : "Não"}</p>
-    <p>Número de episódios: ${personagemProcurado[0].numeroEpisodios}</p>
-    </div>
-    ` 
+    return personagemDigitado
 }
+
+//Personagem clicado
+
+function clickPersonagem (event){
+    const personagemClicado = itens.filter(item => {
+        if( event.target.src.includes(item.personagem.toLowerCase().slice(0,4))){
+            return item
+        }
+    })
+    mostraPersonagem(personagemClicado)
+}
+
+//Mostrar personagem clicado ou digitado
+
+function mostraPersonagem(personagem){
+    boxMostraPersonagem.classList.add("personagem-procurado")
+    return boxMostraPersonagem.innerHTML = `
+        <div>
+        <img class="icon-personagem" src="${personagem[0].icon}"/>
+        </div>
+        <div>
+        <p>${personagem[0].personagem.toUpperCase()}</p>
+        <p>Ator: ${personagem[0].ator}</p>
+        <p>Elenco Principal? ${personagem[0].elencoPrincipal? "Sim" : "Não"}</p>
+        <p>Número de episódios: ${personagem[0].numeroEpisodios}</p>
+        </div>
+        ` 
+}
+
+
 
 
 
