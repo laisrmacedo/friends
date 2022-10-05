@@ -11,13 +11,6 @@ let item1 = {
     icon: "./Media/icon-perso/monica-icon.jpg"
 }
 
-// console.log(`${item1.personagem.toUpperCase()}
-// Ator/atriz: ${item1.ator}
-// Faz parte do elenco principal? ${item1.elencoPrincipal === true ? "Sim!" : "Não!"}
-// Número de episódios: ${item1.numeroEpisodios}
-// Características: ${item1.caracteristicas.join(", ")}
-// `)
-
 
 let item2 = {
     personagem: "rachel karen green",
@@ -158,56 +151,44 @@ const adicionarImagens = () => {
 
 adicionarImagens()
 
+//Pesquisa de nomes
 
+const boxMostraPersonagem = document.querySelector("#item-procurado")
+const inputDeProcura = document.querySelector("#input-procura") 
 
+const mostraPersonagem = `MOnica Geller`
 
+function procuraPersonagem(){
+    // for(let item of itens){
+    //     if (inputDeProcura.value.toLowerCase().slice(0,4) === item.personagem.slice(0,4)){
+    //         boxMostraPersonagem.innerHTML = `${item.personagem}`
+    //     }
+    // }
+    const personagemProcurado = itens.filter(item => {
+        return item.personagem.slice(0,4) === inputDeProcura.value.toLowerCase().slice(0,4)
+    })
 
-
-//Parte 2
-
-
-
-
-// for(let item of itens){
-//     console.log(`${item.personagem.toUpperCase()}
-//     Ator/atriz: ${item.ator}
-//     Faz parte do elenco principal? ${item.elencoPrincipal === true ? "Sim!" : "Não!"}
-//     Número de episódios: ${item.numeroEpisodios}
-//     Características: ${item.caracteristicas.join(", ")}
-//     `)
-// }
-
-
-//Parte 3 
-
-// function escreveObjeto (objeto){
-//     console.log(`Usando funçao: 
-//     ${objeto.nome.toUpperCase()}
-//     Porcentagem de cacau: ${objeto.porcentagemCacau}
-//     É vegano? ${objeto.vegano}
-//     Ingredientes: ${objeto.ingredientes.join(", ")}
-//     `)
-// }
-
-// escreveObjeto(item1)
-
-//Parte 4 
-
-// let qualPersonagem = prompt("Personagem")
-
-function retornarObjeto (string, objeto){
-    if(objeto.nome === string){
-        console.log(`${objeto.nome.toUpperCase()}
-        Porcentagem de cacau: ${objeto.porcentagemCacau}
-        É vegano? ${objeto.vegano}
-        Ingredientes: ${objeto.ingredientes.join(", ")}
-        `)
-    } else {
-        // alert("Este item não foi encontrado")
+    if(personagemProcurado.length === 0){
+        alert("Este personagem não foi encontrado.")
+    } else{
+        boxMostraPersonagem.classList.add("personagem-procurado")
     }
+
+    inputDeProcura.value = ""
+
+    return boxMostraPersonagem.innerHTML = `
+    <div>
+    <img class="icon-personagem" src="${personagemProcurado[0].icon}"/>
+    </div>
+    <div>
+    <p>${personagemProcurado[0].personagem.toUpperCase()}</p>
+    <p>Ator: ${personagemProcurado[0].ator}</p>
+    <p>Elenco Principal? ${personagemProcurado[0].elencoPrincipal? "Sim" : "Não"}</p>
+    <p>Número de episódios: ${personagemProcurado[0].numeroEpisodios}</p>
+    </div>
+    ` 
 }
 
-retornarObjeto("Chocolate", item1)
 
 
 

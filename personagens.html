@@ -29,47 +29,16 @@
       <div class="label-input">
         <label for="">QUAL PERSONAGEM VOCÊ QUER VER?</label>
         <div class="input">
-          <input type="text" id="procura-perso">
-          <button>
+          <input type="text" id="input-procura" value="">
+          <button type="button" id="button-procura" onclick="procuraPersonagem()">
             <img src="./Media/lupa.png" alt="" srcset="">
           </button>
         </div>
       </div>
     </section> 
-    <section class="scroll-temporario">
-      <div class="item">
-        <ul class="item1">
-          <a href="https://en.wikipedia.org/wiki/Monica_Geller">
-            <li>MONICA GELLER</li>
-          </a>
-          <li>Atriz: Courteney Bass Cox</li>
-          <li>Elenco Principal? true</li>
-          <li>Numero de Episodios: 236</li>
-          <li>Caracteristicas: cozinheira, competitiva, perfeccionista</li>
-        </ul>        
-      </div>
-      <div class="item">
-        <ul class="item1">
-          <a href="https://en.wikipedia.org/wiki/Rachel_Green">
-            <li>RACHEL GREEN</li>
-          </a>
-          <li>Atriz: Jennifer Joanna Aniston</li>
-          <li>Elenco Principal? true</li>
-          <li>Numero de Episodios: 236</li>
-          <li>Caracteristicas: estilista, mimada, ex esposa de Ross</li>
-        </ul> 
-      </div>
-      <div class="item">
-        <ul class="item1">
-          <a href="https://en.wikipedia.org/wiki/Phoebe_Buffay">
-            <li>PHOEBE BUFFAY</li>
-          </a>
-          <li>Atriz: Lisa Valerie Kudrow</li>
-          <li>Elenco Principal? true</li>
-          <li>Numero de Episodios: 236</li>
-          <li>Caracteristicas: massagista, supersticiosa, ingênua</li>
-        </ul> 
-      </div>
+    <section class="item-procurado" id="item-procurado"><p>?</p></section>
+    <section class="scroll-horizontal">
+      <div class="img-scroll" id="icons"></div>
     </section>
   </main>
     <footer>
