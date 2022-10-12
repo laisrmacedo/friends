@@ -11,6 +11,8 @@ let item1 = {
     icon: "./Media/icon-perso/monica-icon.jpg"
 }
 
+<<<<<<< HEAD
+=======
 // console.log(`${item1.personagem.toUpperCase()}
 // Ator/atriz: ${item1.ator}
 // Faz parte do elenco principal? ${item1.elencoPrincipal === true ? "Sim!" : "Não!"}
@@ -18,6 +20,7 @@ let item1 = {
 // Características: ${item1.caracteristicas.join(", ")}
 // `)
 
+>>>>>>> d141784239ade0358b38b2649c827ab1fffcf35c
 
 let item2 = {
     personagem: "rachel karen green",
@@ -129,7 +132,7 @@ let item13 = {
 }
 
 let item14 = {
-    personagem: "chick and duck",
+    personagem: "duck and chick",
     ator: "Chick and Duck",
     elencoPrincipal: false,
     numeroEpisodios: 10,
@@ -147,6 +150,18 @@ let item15 = {
 }
 
 let itens = [item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15]
+<<<<<<< HEAD
+
+const divScroll = document.querySelector("#icons")
+
+const adicionarImagensScroll = (itens) => {
+    for(let item of itens){
+        divScroll.innerHTML += `<img src=${item.icon} onclick="clickPersonagem(event)" alt="">`
+    }
+}
+
+adicionarImagensScroll(itens)
+=======
 
 const divScroll = document.querySelector("#icons")
 
@@ -157,57 +172,92 @@ const adicionarImagens = () => {
 }
 
 adicionarImagens()
+>>>>>>> d141784239ade0358b38b2649c827ab1fffcf35c
 
+const imagensScroll = document.querySelector(".img-scroll")
 
+function onInputChange(event){
+    imagensScroll.innerHTML = ""
+    const value = event.target.value.trim()
+    const itensFiltrados = itens.filter(item => {
+        return item.personagem.includes(value)
+    })
 
+    // if(itensFiltrados.length === 0){
+    //     alert("Este personagem não foi encontrado.")
+    // }
 
-
-
-//Parte 2
-
-
-
-
-// for(let item of itens){
-//     console.log(`${item.personagem.toUpperCase()}
-//     Ator/atriz: ${item.ator}
-//     Faz parte do elenco principal? ${item.elencoPrincipal === true ? "Sim!" : "Não!"}
-//     Número de episódios: ${item.numeroEpisodios}
-//     Características: ${item.caracteristicas.join(", ")}
-//     `)
-// }
-
-
-//Parte 3 
-
-// function escreveObjeto (objeto){
-//     console.log(`Usando funçao: 
-//     ${objeto.nome.toUpperCase()}
-//     Porcentagem de cacau: ${objeto.porcentagemCacau}
-//     É vegano? ${objeto.vegano}
-//     Ingredientes: ${objeto.ingredientes.join(", ")}
-//     `)
-// }
-
-// escreveObjeto(item1)
-
-//Parte 4 
-
-// let qualPersonagem = prompt("Personagem")
-
-function retornarObjeto (string, objeto){
-    if(objeto.nome === string){
-        console.log(`${objeto.nome.toUpperCase()}
-        Porcentagem de cacau: ${objeto.porcentagemCacau}
-        É vegano? ${objeto.vegano}
-        Ingredientes: ${objeto.ingredientes.join(", ")}
-        `)
-    } else {
-        // alert("Este item não foi encontrado")
-    }
+    adicionarImagensScroll(itensFiltrados)
 }
 
-retornarObjeto("Chocolate", item1)
+//Personagem procurado
+
+const boxMostraPersonagem = document.querySelector("#item-procurado")
+const inputDeProcura = document.querySelector("#input-procura") 
+
+<<<<<<< HEAD
+// let personagemEncontrado
+=======
+
+>>>>>>> d141784239ade0358b38b2649c827ab1fffcf35c
+
+function verificaPersonagemProcurado(){
+
+    const personagemDigitado = itens.filter(item => {
+        if(item.personagem.includes(inputDeProcura.value.toLowerCase())){
+            return item
+        }
+    })
+
+    if(personagemDigitado.length === 0){
+        alert("Este personagem não foi encontrado.")
+    } else{
+        mostraPersonagem(personagemDigitado)
+    }
+
+    inputDeProcura.value = ""
+    return personagemDigitado
+}
+
+//Personagem clicado
+
+function clickPersonagem (event){
+    const personagemClicado = itens.filter(item => {
+        if( event.target.src.includes(item.personagem.toLowerCase().slice(0,4))){
+            return item
+        }
+    })
+    mostraPersonagem(personagemClicado)
+}
+
+//Mostrar personagem clicado ou digitado
+
+function mostraPersonagem(personagem){
+    boxMostraPersonagem.classList.add("personagem-procurado")
+    return boxMostraPersonagem.innerHTML = `
+        <div>
+        <img class="icon-personagem" src="${personagem[0].icon}"/>
+        </div>
+        <div>
+        <p>${personagem[0].personagem.toUpperCase()}</p>
+        <p>Ator: ${personagem[0].ator}</p>
+        <p>Elenco Principal? ${personagem[0].elencoPrincipal? "Sim" : "Não"}</p>
+        <p>Número de episódios: ${personagem[0].numeroEpisodios}</p>
+        </div>
+        ` 
+}
+
+const teste = itens.filter((valor) => {
+    let array
+    for(let i in valor.caracteristicas){
+        array = valor.caracteristicas[i]
+        console.log(array)
+    }
+    return array === 'estilista'
+})
+
+console.log(teste);
+
 
 
 
