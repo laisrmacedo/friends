@@ -220,16 +220,16 @@ function mostraPersonagem(personagem){
         ` 
 }
 
-const teste = itens.filter((valor) => {
-    let array
-    for(let i in valor.caracteristicas){
-        array = valor.caracteristicas[i]
-        console.log(array)
-    }
-    return array === 'estilista'
-})
+// const teste = itens.filter((valor) => {
+//     let array
+//     for(let i in valor.caracteristicas){
+//         array = valor.caracteristicas[i]
+//         console.log(array)
+//     }
+//     return array === 'estilista'
+// })
 
-console.log(teste);
+// console.log(teste);
 
 
 

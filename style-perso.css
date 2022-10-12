@@ -137,7 +137,7 @@ button img{
 .item-procurado{
   grid-column: 11/18;
   grid-row: 3/5;
-  border: gray 1px solid;
+  /* border: gray 1px solid; */
   background-color: rgba(128, 128, 128, 0.11);
 }
 
