@@ -283,7 +283,7 @@ footer img:hover{
   nav {
     grid-column: 3/17;
     align-items: center;
-    font-size: 2.8vw;
+    font-size: 3vw;
   }
   .logo-friends{
     display: none;
