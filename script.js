@@ -155,7 +155,7 @@ const imagensScroll = document.querySelector(".img-scroll")
 
 function onInputChange(event){
     imagensScroll.innerHTML = ""
-    const value = event.target.value
+    const value = event.target.value.trim()
     const itensFiltrados = itens.filter(item => {
         return item.personagem.includes(value)
     })
@@ -220,7 +220,16 @@ function mostraPersonagem(personagem){
         ` 
 }
 
+const teste = itens.filter((valor) => {
+    let array
+    for(let i in valor.caracteristicas){
+        array = valor.caracteristicas[i]
+        console.log(array)
+    }
+    return array === 'estilista'
+})
 
+console.log(teste);
 
 
 
