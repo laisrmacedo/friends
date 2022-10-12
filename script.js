@@ -11,16 +11,6 @@ let item1 = {
     icon: "./Media/icon-perso/monica-icon.jpg"
 }
 
-<<<<<<< HEAD
-=======
-// console.log(`${item1.personagem.toUpperCase()}
-// Ator/atriz: ${item1.ator}
-// Faz parte do elenco principal? ${item1.elencoPrincipal === true ? "Sim!" : "Não!"}
-// Número de episódios: ${item1.numeroEpisodios}
-// Características: ${item1.caracteristicas.join(", ")}
-// `)
-
->>>>>>> d141784239ade0358b38b2649c827ab1fffcf35c
 
 let item2 = {
     personagem: "rachel karen green",
@@ -150,7 +140,6 @@ let item15 = {
 }
 
 let itens = [item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15]
-<<<<<<< HEAD
 
 const divScroll = document.querySelector("#icons")
 
@@ -161,18 +150,6 @@ const adicionarImagensScroll = (itens) => {
 }
 
 adicionarImagensScroll(itens)
-=======
-
-const divScroll = document.querySelector("#icons")
-
-const adicionarImagens = () => {
-    for(let item of itens){
-        divScroll.innerHTML += `<img src=${item.icon} alt="" srcset="">`
-    }
-}
-
-adicionarImagens()
->>>>>>> d141784239ade0358b38b2649c827ab1fffcf35c
 
 const imagensScroll = document.querySelector(".img-scroll")
 
@@ -195,11 +172,7 @@ function onInputChange(event){
 const boxMostraPersonagem = document.querySelector("#item-procurado")
 const inputDeProcura = document.querySelector("#input-procura") 
 
-<<<<<<< HEAD
 // let personagemEncontrado
-=======
-
->>>>>>> d141784239ade0358b38b2649c827ab1fffcf35c
 
 function verificaPersonagemProcurado(){
 
