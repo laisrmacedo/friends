@@ -145,7 +145,10 @@ const divScroll = document.querySelector("#icons")
 
 const adicionarImagensScroll = (itens) => {
     for(let item of itens){
-        divScroll.innerHTML += `<img src=${item.icon} onclick="clickPersonagem(event)" alt="">`
+        divScroll.innerHTML += `
+        <div class="box-img-scroll"> 
+        <img src=${item.icon} onclick="clickPersonagem(event)" alt="">
+        </div>`
     }
 }
 
@@ -206,7 +209,8 @@ function clickPersonagem (event){
 //Mostrar personagem clicado ou digitado
 
 function mostraPersonagem(personagem){
-    boxMostraPersonagem.classList.add("personagem-procurado")
+    boxMostraPersonagem.classList.add("personagem-encontrado")
+    boxMostraPersonagem.classList.remove("item-procurado")
     return boxMostraPersonagem.innerHTML = `
         <div>
         <img class="icon-personagem" src="${personagem[0].icon}"/>
