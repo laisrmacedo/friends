@@ -163,10 +163,6 @@ function onInputChange(event){
         return item.personagem.includes(value)
     })
 
-    // if(itensFiltrados.length === 0){
-    //     alert("Este personagem não foi encontrado.")
-    // }
-
     adicionarImagensScroll(itensFiltrados)
 }
 
@@ -185,9 +181,12 @@ function verificaPersonagemProcurado(){
         }
     })
 
-    if(personagemDigitado.length === 0){
+    if(inputDeProcura.value === ""){
+        alert("Nenhum personagem foi procurado.")
+    }else if (personagemDigitado.length === 0){
         alert("Este personagem não foi encontrado.")
-    } else{
+        adicionarImagensScroll(itens)
+    }else {
         mostraPersonagem(personagemDigitado)
     }
 

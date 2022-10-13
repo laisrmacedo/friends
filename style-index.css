@@ -100,14 +100,6 @@ a {
     border: none;
 }
 
-/* .mosaico-complementar{
-    grid-column: 5/10;
-    grid-row: 7/10;
-    height: 34%;
-    border: 1px yellow solid;
-    width: 50%;
-} */
-
 aside{
     width: 50%;
     display: grid;
@@ -362,7 +354,6 @@ footer img:hover{
     aside{
         height: 50%;
         width: 100%;
-
     }
 
     .barra1{
