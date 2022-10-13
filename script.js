@@ -183,11 +183,13 @@ function verificaPersonagemProcurado(){
 
     if(inputDeProcura.value === ""){
         alert("Nenhum personagem foi procurado.")
+        adicionarImagensScroll(itens)
     }else if (personagemDigitado.length === 0){
         alert("Este personagem não foi encontrado.")
         adicionarImagensScroll(itens)
     }else {
         mostraPersonagem(personagemDigitado)
+        adicionarImagensScroll(itens)
     }
 
     inputDeProcura.value = ""
