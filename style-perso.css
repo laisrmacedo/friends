@@ -278,7 +278,7 @@ footer img:hover{
 
 @media screen and (max-width: 425px){
   .container{
-    margin: 8vh 4vw 0 4vw;
+    margin: 4vh 4vw 0 4vw;
 
   }
   nav {
@@ -302,7 +302,7 @@ footer img:hover{
 
   .cores{
     height: 20%;
-    width: 90%;
+    width: 100%;
     flex-direction: column;
 
   }
@@ -324,7 +324,7 @@ footer img:hover{
     justify-content: center;
     align-items: center;
     gap: 8px;
-    font-size: 2.2vh;
+    font-size: 3.2vw;
   }
   
   button{

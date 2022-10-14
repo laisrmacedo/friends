@@ -318,7 +318,7 @@ footer img:hover{
 
 @media screen and (max-width: 425px){
     .container{
-      margin: 8vh 4vw 0 4vw;
+      margin: 4vh 4vw 0 4vw;
         flex-direction: column;
     }
 
