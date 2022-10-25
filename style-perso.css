@@ -274,6 +274,11 @@ footer img:hover{
     grid-row: 3/5;
     font-size: 1.5vw;
   }
+  nav {
+    grid-column: 2/9;
+    flex-wrap: wrap;
+    gap: 10px
+  }
 }
 
 @media screen and (max-width: 425px){
