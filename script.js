@@ -189,6 +189,7 @@ function verificaPersonagemProcurado(){
         adicionarImagensScroll(itens)
     }else {
         mostraPersonagem(personagemDigitado)
+        divScroll.innerHTML = ""
         adicionarImagensScroll(itens)
     }
 
