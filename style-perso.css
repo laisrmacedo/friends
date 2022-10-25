@@ -289,7 +289,7 @@ footer img:hover{
   nav {
     grid-column: 3/17;
     align-items: center;
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .logo-friends{
     display: none;
