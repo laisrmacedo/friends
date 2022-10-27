@@ -286,17 +286,18 @@ footer img:hover{
     margin: 4vh 4vw 0 4vw;
 
   }
+
   nav {
     grid-column: 3/17;
     align-items: center;
-    font-size: 4vw;
+    font-size: 3.2vw;
   }
+  
   .logo-friends{
     display: none;
   }
 
   .procurar{
-    font-size: 3vw;
     grid-column: 3/17;
     grid-row: 2/4;
     justify-content: space-evenly;

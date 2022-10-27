@@ -181,11 +181,13 @@ function verificaPersonagemProcurado(){
         }
     })
 
-    if(inputDeProcura.value === ""){
+    if(inputDeProcura.value.trim() === ""){
         alert("Nenhum personagem foi procurado.")
+        divScroll.innerHTML = ""
         adicionarImagensScroll(itens)
     }else if (personagemDigitado.length === 0){
         alert("Este personagem não foi encontrado.")
+        divScroll.innerHTML = ""
         adicionarImagensScroll(itens)
     }else {
         mostraPersonagem(personagemDigitado)
@@ -194,7 +196,7 @@ function verificaPersonagemProcurado(){
     }
 
     inputDeProcura.value = ""
-    return personagemDigitado
+    // return personagemDigitado
 }
 
 //Personagem clicado
@@ -227,17 +229,52 @@ function mostraPersonagem(personagem){
         ` 
 }
 
-// const teste = itens.filter((valor) => {
-//     let array
-//     for(let i in valor.caracteristicas){
-//         array = valor.caracteristicas[i]
-//         console.log(array)
-//     }
-//     return array === 'estilista'
-// })
+function calcularMedia() {
+    let soma = 0
+    for (let i of itens){
+        let numeroEpisodios = Number(i.numeroEpisodios)
+        soma += numeroEpisodios
+    }
 
-// console.log(teste);
+    let media = soma/itens.length
+    console.log("A média do número de episódios é", media)
+}
 
+calcularMedia()
+
+function mostrarBooleanosTrue(){
+    const filtrarTrue = itens.filter((item) => {
+        return item.elencoPrincipal
+    })
+    console.log("Itens com booleano = true:", filtrarTrue)
+}
+
+mostrarBooleanosTrue()
+
+
+function imprimirRelatorio(){
+    for (let i of itens){
+    console.log(`${i.personagem.toUpperCase()}
+    Ator/atriz: ${i.ator}
+    Faz parte do elenco principal? ${i.elencoPrincipal? "Sim!" : "Não!"}
+    Número de episódios: ${i.numeroEpisodios}
+    Características: ${i.caracteristicas.join(", ")}
+    `)
+    }
+}
+
+imprimirRelatorio()
+
+function keyEnter(){
+    window.addEventListener("keyup", (e) => {
+        if( e.key === "a"){
+          console.log("teste")
+        // novaTarefa !== "" &&
+        // verificaPersonagemProcurado()
+      }
+    })
+
+  }
 
 
 
