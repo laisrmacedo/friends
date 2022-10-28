@@ -1,4 +1,4 @@
-//SEMANA 4 ============= MUDANÇA DE TEMA ============= 
+//SEMANA 6 
 
 //Parte 1
 
@@ -176,9 +176,7 @@ const inputDeProcura = document.querySelector("#input-procura")
 function verificaPersonagemProcurado(){
 
     const personagemDigitado = itens.filter(item => {
-        if(item.personagem.includes(inputDeProcura.value.toLowerCase())){
-            return item
-        }
+        return item.personagem.includes(inputDeProcura.value.toLowerCase())
     })
 
     if(inputDeProcura.value.trim() === ""){
@@ -196,7 +194,6 @@ function verificaPersonagemProcurado(){
     }
 
     inputDeProcura.value = ""
-    // return personagemDigitado
 }
 
 //Personagem clicado
