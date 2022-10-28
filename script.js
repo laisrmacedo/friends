@@ -265,16 +265,6 @@ function imprimirRelatorio(){
 
 imprimirRelatorio()
 
-function keyEnter(){
-    window.addEventListener("keyup", (e) => {
-        if( e.key === "a"){
-          console.log("teste")
-        // novaTarefa !== "" &&
-        // verificaPersonagemProcurado()
-      }
-    })
-
-  }
 
 
 
