@@ -7,27 +7,17 @@ let item1 = {
     ator: "Courteney Bass Cox",
     elencoPrincipal: true,
     numeroEpisodios: 236,
-    caracteristicas: ["cozinheira", "competitiva", "perfeccionista"],
+    caracteristicas: ["Cozinheira", "competitiva", "perfeccionista."],
     icon: "./Media/icon-perso/monica-icon.jpg"
 }
 
-<<<<<<< HEAD
-=======
-// console.log(`${item1.personagem.toUpperCase()}
-// Ator/atriz: ${item1.ator}
-// Faz parte do elenco principal? ${item1.elencoPrincipal === true ? "Sim!" : "Não!"}
-// Número de episódios: ${item1.numeroEpisodios}
-// Características: ${item1.caracteristicas.join(", ")}
-// `)
-
->>>>>>> d141784239ade0358b38b2649c827ab1fffcf35c
 
 let item2 = {
     personagem: "rachel karen green",
     ator: "Jennifer Joanna Aniston",
     elencoPrincipal: true,
     numeroEpisodios: 236,
-    caracteristicas: ["estilista", "mimada", "ex-esposa-ross"],
+    caracteristicas: ["Estilista", "mimada", "terceira ex esposa de Ross."],
     icon: "./Media/icon-perso/rachel-icon.png"
 }
 
@@ -36,7 +26,7 @@ let item3 = {
     ator: "Lisa Valerie Kudrow",
     elencoPrincipal: true,
     numeroEpisodios: 236,
-    caracteristicas: ["massagista", "supersticiosa", "ingênua"],
+    caracteristicas: ["Massagista", "supersticiosa", "ingênua."],
     icon: "./Media/icon-perso/phoebe-icon.png"
 }
 
@@ -45,7 +35,7 @@ let item4 = {
     ator: "David Lawrence Schwimmer",
     elencoPrincipal: true,
     numeroEpisodios: 236,
-    caracteristicas: ["paleontólogo", "nerd", "divorciado"],
+    caracteristicas: ["Paleontólogo", "nerd", "3 divórcios."],
     icon: "./Media/icon-perso/ross-icon.png"
 }
 
@@ -54,7 +44,7 @@ let item5 = {
     ator: "Matthew Steven LeBlanc",
     elencoPrincipal: true,
     numeroEpisodios: 236,
-    caracteristicas: ["ator", "mulherengo", "comilão"],
+    caracteristicas: ["Ator", "mulherengo", "comilão."],
     icon: "./Media/icon-perso/joey-icon.png"
 }
 
@@ -63,7 +53,7 @@ let item6 = {
     ator: "Matthew Langford Perry",
     elencoPrincipal: true,
     numeroEpisodios: 236,
-    caracteristicas: ["contador", "piadista", "sarcástico"],
+    caracteristicas: ["Ninguém sabe a profissão", "piadista", "sarcástico."],
     icon: "./Media/icon-perso/chandler-icon.png"
 }
 
@@ -72,7 +62,7 @@ let item7 = {
     ator: "James Michael Tyler",
     elencoPrincipal: false,
     numeroEpisodios: 148,
-    caracteristicas: ["gerente", "apaixonado", "inseguro"],
+    caracteristicas: ["Gerente", "apaixonado", "inseguro."],
     icon: "./Media/icon-perso/gunther.png"
 }
 
@@ -81,7 +71,7 @@ let item8 = {
     ator: "Margaret Emily Wheeler",
     elencoPrincipal: false,
     numeroEpisodios: 19,
-    caracteristicas: ["risada", "irritante", "oh-my-god"],
+    caracteristicas: ["Risada estranha", "irritante", "OH MY GOD!."],
     icon: "./Media/icon-perso/janice.png"
 }
 
@@ -90,7 +80,7 @@ let item9 = {
     ator: "Elliott Gould e Christina Pickles",
     elencoPrincipal: false,
     numeroEpisodios: 19,
-    caracteristicas: ["casal","pais", "ross-preferido"],
+    caracteristicas: ["Casal Geller","pai e mãe", "Ross <3"],
     icon: "./Media/icon-perso/jack-judy.png"
 }
 
@@ -100,7 +90,7 @@ let item10 = {
     ator: "Jane Moore Sibbett",
     elencoPrincipal: false,
     numeroEpisodios: 18,
-    caracteristicas: ["ex-esposa-ross", "mãe", "ben"],
+    caracteristicas: ["Primeira ex esposa de Ross", "lésbica", "Mãe de Ben."],
     icon: "./Media/icon-perso/carol.png"
 }
 
@@ -109,7 +99,7 @@ let item11 = {
     ator: "Paul Rudd",
     elencoPrincipal: false,
     numeroEpisodios: 17,
-    caracteristicas: ["marido-phoebe", "estranho", "pianista"],
+    caracteristicas: ["Marido de Phoebe", "legal", "pianista."],
     icon: "./Media/icon-perso/mike.jpg"
 }
 
@@ -118,7 +108,7 @@ let item12 = {
     ator: "Helen Baxendale",
     elencoPrincipal: false,
     numeroEpisodios: 14,
-    caracteristicas: ["ex-esposa-ross", "london", "nome-errado-altar"],
+    caracteristicas: ["Segunda ex esposa de Ross", "ciumenta", "ouviu o nome errado no altar"],
     icon: "./Media/icon-perso/emily.png"
 }
 
@@ -127,7 +117,7 @@ let item13 = {
     ator: "Margaret Emily Wheeler",
     elencoPrincipal: false,
     numeroEpisodios: 10,
-    caracteristicas: ["ex-namorado-monica", "mais-velho", "bigode"],
+    caracteristicas: ["Ex namorado de Mônica", "mais velho", "bigode legal."],
     icon: "./Media/icon-perso/richard.png"
 }
 
@@ -136,7 +126,7 @@ let item14 = {
     ator: "Chick and Duck",
     elencoPrincipal: false,
     numeroEpisodios: 10,
-    caracteristicas: ["pintinho", "patinho", "pinto-nao-nada"],
+    caracteristicas: ["Pintinho", "patinho", "pintinho não sabe nadar."],
     icon: "./Media/icon-perso/duck.png"
 }
 
@@ -145,7 +135,7 @@ let item15 = {
     ator: "Giovanni Ribisi",
     elencoPrincipal: false,
     numeroEpisodios: 9,
-    caracteristicas: ["meio-irmao", "pai-trigemeos", "queima-coisas"],
+    caracteristicas: ["Meio irmão", "pai de três", "queima coisas."],
     icon: "./Media/icon-perso/frank.png"
 }
 
@@ -155,7 +145,10 @@ const divScroll = document.querySelector("#icons")
 
 const adicionarImagensScroll = (itens) => {
     for(let item of itens){
-        divScroll.innerHTML += `<img src=${item.icon} onclick="clickPersonagem(event)" alt="">`
+        divScroll.innerHTML += `
+        <div class="box-img-scroll"> 
+        <img src=${item.icon} onclick="clickPersonagem(event)" alt="">
+        </div>`
     }
 }
 
@@ -169,10 +162,6 @@ function onInputChange(event){
     const itensFiltrados = itens.filter(item => {
         return item.personagem.includes(value)
     })
-
-    // if(itensFiltrados.length === 0){
-    //     alert("Este personagem não foi encontrado.")
-    // }
 
     adicionarImagensScroll(itensFiltrados)
 }
@@ -192,14 +181,22 @@ function verificaPersonagemProcurado(){
         }
     })
 
-    if(personagemDigitado.length === 0){
+    if(inputDeProcura.value.trim() === ""){
+        alert("Nenhum personagem foi procurado.")
+        divScroll.innerHTML = ""
+        adicionarImagensScroll(itens)
+    }else if (personagemDigitado.length === 0){
         alert("Este personagem não foi encontrado.")
-    } else{
+        divScroll.innerHTML = ""
+        adicionarImagensScroll(itens)
+    }else {
         mostraPersonagem(personagemDigitado)
+        divScroll.innerHTML = ""
+        adicionarImagensScroll(itens)
     }
 
     inputDeProcura.value = ""
-    return personagemDigitado
+    // return personagemDigitado
 }
 
 //Personagem clicado
@@ -216,13 +213,15 @@ function clickPersonagem (event){
 //Mostrar personagem clicado ou digitado
 
 function mostraPersonagem(personagem){
-    boxMostraPersonagem.classList.add("personagem-procurado")
+    boxMostraPersonagem.classList.add("personagem-encontrado")
+    boxMostraPersonagem.classList.remove("item-procurado")
     return boxMostraPersonagem.innerHTML = `
         <div>
         <img class="icon-personagem" src="${personagem[0].icon}"/>
         </div>
         <div>
         <p>${personagem[0].personagem.toUpperCase()}</p>
+        <p>${personagem[0].caracteristicas.join(", ")}</p>
         <p>Ator: ${personagem[0].ator}</p>
         <p>Elenco Principal? ${personagem[0].elencoPrincipal? "Sim" : "Não"}</p>
         <p>Número de episódios: ${personagem[0].numeroEpisodios}</p>
@@ -230,16 +229,41 @@ function mostraPersonagem(personagem){
         ` 
 }
 
-const teste = itens.filter((valor) => {
-    let array
-    for(let i in valor.caracteristicas){
-        array = valor.caracteristicas[i]
-        console.log(array)
+function calcularMedia() {
+    let soma = 0
+    for (let i of itens){
+        let numeroEpisodios = Number(i.numeroEpisodios)
+        soma += numeroEpisodios
     }
-    return array === 'estilista'
-})
 
-console.log(teste);
+    let media = soma/itens.length
+    console.log("A média do número de episódios é", media)
+}
+
+calcularMedia()
+
+function mostrarBooleanosTrue(){
+    const filtrarTrue = itens.filter((item) => {
+        return item.elencoPrincipal
+    })
+    console.log("Itens com booleano = true:", filtrarTrue)
+}
+
+mostrarBooleanosTrue()
+
+
+function imprimirRelatorio(){
+    for (let i of itens){
+    console.log(`${i.personagem.toUpperCase()}
+    Ator/atriz: ${i.ator}
+    Faz parte do elenco principal? ${i.elencoPrincipal? "Sim!" : "Não!"}
+    Número de episódios: ${i.numeroEpisodios}
+    Características: ${i.caracteristicas.join(", ")}
+    `)
+    }
+}
+
+imprimirRelatorio()
 
 
 
