@@ -54,10 +54,8 @@ a {
 
 .logo-friends{
   grid-column: 16/18;
-  /* grid-row: 3/5; */
   display: flex;
   align-items: flex-end;
-  /* border: 1px solid red; */
 }
 
 .logo-friends > img{
@@ -70,7 +68,6 @@ a {
   grid-row: 3/5;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   padding: 4vh 0;
 }
 
@@ -148,14 +145,7 @@ button:hover{
   align-items: center;
   justify-content: center;
   border: rgba(128, 128, 128, 0.384) 1px solid;
-  /* animation: border 1s infinite; */
 }
-
-/* @keyframes border {
-  to {
-    border: rgb(128, 128, 128, 0.856) 1px solid;
-  }
-} */
 
 .item-procurado > p{
   font-size: 4em;
@@ -197,22 +187,17 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100%; */
 } 
 
  
 
 .img-scroll{
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   gap: 1.5vw;
   width: 90%;
-  /* height: 90%; */
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  /* z-index: 10; */
 }
 
 .box-img-scroll{
