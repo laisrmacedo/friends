@@ -2,7 +2,7 @@
 
 ![logo.friends](./Media/Friends_logo.svg.png)
 
-Esse é um projeto de introdução aos fundamentos do desenvolvimento Web. O objetivo foi construir uma página estilizada, com **lista** e **busca** utilizando manipulação de DOM e praticando conceitos como:
+O objetivo foi construir uma página estilizada, com **lista** e **busca** utilizando manipulação de DOM e praticando conceitos como:
 
 - Variáveis
 - Operadores
